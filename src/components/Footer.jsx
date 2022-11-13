@@ -7,7 +7,7 @@ import logo from "../assets/images/Grouplogo.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black h-full text-white md:flex justify-between items-start p-20">
+    <div className="bg-black h-full text-white md:flex justify-between items-start md:p-20 py-20 pl-10 ">
       <div className="flex flex-col justify-between items-center md:h-56 ">
         <img src={logo} alt="" />
         <div className="flex gap-8 justify-center py-4 ">
@@ -16,7 +16,7 @@ const Footer = () => {
           <GrTwitter className="w-8 h-8" />
         </div>
       </div>
-      <ul className="space-y-5 py-5 text-xl ">
+      <ul className="space-y-5 py-5 md:text-xl text-lg ">
         <li className="text-2xl font-bold pb-3">Community</li>
         <li>NFT</li>
         <li>Tokens</li>
@@ -24,7 +24,7 @@ const Footer = () => {
         <li>Discord</li>
       </ul>
 
-      <ul className="space-y-5 py-5 text-xl ">
+      <ul className="space-y-5 py-5 md:text-xl text-lg ">
         <li className="text-2xl font-bold pb-3">Places</li>
         <li>Castle</li>
         <li>Farms</li>
@@ -32,7 +32,7 @@ const Footer = () => {
         <li>Learn more</li>
       </ul>
 
-      <ul className="space-y-5 py-5 text-xl ">
+      <ul className="space-y-5 py-5 md:text-xl text-lg ">
         <li className="text-2xl font-bold pb-3">About us</li>
         <li>Road map</li>
         <li>Creators</li>
