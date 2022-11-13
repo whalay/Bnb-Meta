@@ -2,7 +2,6 @@ import React from "react";
 import { ImFacebook } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
 import { GrTwitter } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/images/Grouplogo.svg";
 
 const Footer = () => {

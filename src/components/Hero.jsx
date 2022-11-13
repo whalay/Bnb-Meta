@@ -36,7 +36,7 @@ const Hero = () => {
           <img src={hero} alt="" className="" />
         </div>
       </div>
-      <div className="bg-[#A02279] flex justify-between md:px-[100px] px-10 md:text-2xl text-lg font-bold text-white">
+      <div className="bg-[#A02279] flex justify-between md:px-[100px] px-5 md:text-2xl text-sm font-bold text-white">
         <span className="flex items-center space-x-2">
           <img src={mbtoken} alt="" />
           <p>MBToken</p>

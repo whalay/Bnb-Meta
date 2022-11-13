@@ -3,5 +3,5 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600&display=swap');
 * {
-    font-family: 'Red Rose', cursive;
+    font-family: 'Red Rose';
 }
