@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -15,27 +16,33 @@ const Navbar = (props) => {
       <img src={logo} alt="" />
 
       <ul className="md:flex justify-between gap-10 hidden">
-        <li>Home</li>
-        <li>Place to stay</li>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/nft">Place to stay</Link>
+        </li>
         <li>NFTs</li>
         <li>Community</li>
       </ul>
 
-      <button onClick={props.showModal} className="p-4 bg-[#A02279] text-white rounded-[10px] hidden md:block">
+      <button
+        onClick={props.showModal}
+        className="p-4 bg-[#A02279] text-white rounded-[10px] hidden md:block"
+      >
         Connect wallet
       </button>
 
       {toggle ? (
-     <AiOutlineClose
-     onClick={navHandler}
-     className="w-10 h-10 block sm:hidden"
-   />
+        <AiOutlineClose
+          onClick={navHandler}
+          className="w-10 h-10 block sm:hidden"
+        />
       ) : (
-       
         <GiHamburgerMenu
-        onClick={navHandler}
-        className="w-10 h-10 block sm:hidden"
-      />
+          onClick={navHandler}
+          className="w-10 h-10 block sm:hidden"
+        />
       )}
 
       {toggle && (
