@@ -12,7 +12,7 @@ const Navbar = (props) => {
     setToggle((toggle) => !toggle);
   };
   return (
-    <div className="flex justify-between items-center p-10  font-semibold text-lg">
+    <div className="flex justify-between items-center md:p-10 p-2  font-semibold text-lg">
       <img src={logo} alt="" />
 
       <ul className="md:flex justify-between gap-10 hidden">
