@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import logo from "../assets/images/Grouplogo.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [toggle, setToggle] = useState(false);
 
   const navHandler = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         <li>Community</li>
       </ul>
 
-      <button className="p-4 bg-[#A02279] text-white rounded-[10px] hidden md:block">
+      <button onClick={props.showModal} className="p-4 bg-[#A02279] text-white rounded-[10px] hidden md:block">
         Connect wallet
       </button>
 

@@ -10,11 +10,11 @@ const Hero = () => {
     <section className="h-full">
       <div className="flex flex-col-reverse md:flex-row justify-between  items-center md:p-10 md:mx-10 px-5">
         <div className="flex flex-col md:w-1/2 gap-10 py-10">
-          <h1 className="md:text-6xl text-4xl font-bold">
+          <h1 className="md:text-5xl text-3xl font-bold">
             Rent a <span className="text-[#A02279]">Place</span> away from <span className="text-[#A02279]">Home</span> in the <span className="text-[#A02279]">Metaverse</span>
           </h1>
 
-          <p className="text-2xl ">
+          <p className="text-xl ">
             we provide you access to luxury and affordable houses in the
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone.
