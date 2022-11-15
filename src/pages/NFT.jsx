@@ -41,13 +41,13 @@ const Options =[
    },
 ];
 
-const NFT = () => {
+const NFT = ({showModal}) => {
   return (
     <div className="">
-      <Navbar />
+      <Navbar showModal={showModal} />
       <div className="p-10">
         <div className="flex justify-between items-center p-5 ">
-          <ul className="md:flex justify-between gap-20 hidden ">
+          <ul className="md:flex flex-wrap justify-between gap-20 hidden ">
             <li>Restaurant</li>
             <li>Cottage</li>
             <li>Castle</li>
@@ -59,8 +59,8 @@ const NFT = () => {
           </ul>
      
           <select className="p-2 mx-5 border-2 md:hidden" >
-            {Options.map((option) => (
-          <option value={option.value}>{option.label}</option>
+            {Options.map((option, index) => (
+          <option value={option.value} key={index}>{option.label}</option>
             ))}
           </select>
      

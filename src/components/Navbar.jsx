@@ -13,7 +13,9 @@ const Navbar = (props) => {
   };
   return (
     <div className="flex justify-between items-center md:p-10 p-5  font-semibold text-lg">
-      <img src={logo} alt="" />
+      <Link to="/home">
+      <img src={logo} alt="" className="w-44 md:w-auto" />
+      </Link>
 
       <ul className="md:flex justify-between gap-10 hidden">
         <li>

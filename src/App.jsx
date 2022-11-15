@@ -34,7 +34,7 @@ function App() {
           <Home showModal={openModalHandler} />
         </Route>
         <Route path="/nft">
-          <NFT />
+          <NFT showModal={openModalHandler}/>
         </Route>
       </Router>
     </div>
