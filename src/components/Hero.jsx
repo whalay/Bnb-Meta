@@ -23,10 +23,10 @@ const Hero = () => {
           <div className="w-full  text-center md:text-left">
             <input
               type="text"
-              placeholder="searrch for location"
-              className="border p-4 w-1/2"
+              placeholder="search for location"
+              className="border py-4 px-1 w-2/3 "
             />
-            <button className="p-4 bg-[#A02279] text-white rounded-[10px] w-1/3">
+            <button className="p-4 bg-[#A02279] text-white rounded-[10px] w-1/4">
               Search
             </button>
           </div>
@@ -36,17 +36,17 @@ const Hero = () => {
           <img src={hero} alt="" className="" />
         </div>
       </div>
-      <div className="bg-[#A02279] flex justify-between md:px-[100px] px-5 md:text-2xl text-sm font-bold text-white">
-        <span className="flex items-center space-x-2">
+      <div className="bg-[#A02279] flex justify-between gap-10 md:px-[100px] px-5 md:text-2xl text-sm font-bold text-white">
+        <span className="flex items-center justify-around space-x-1">
           <img src={mbtoken} alt="" />
           <p>MBToken</p>
         </span>
-        <span className="flex items-center space-x-2">
+        <span className="flex items-center  justify-around space-x-1">
           <img src={meta} alt="" />
           <p className="font-normal">METAMASK</p>
         </span>
 
-        <span className="flex items-center space-x-2">
+        <span className="flex items-center justify-around space-x-1">
           <img src={opensea} alt="" />
           <p>OpenSea</p>
         </span>

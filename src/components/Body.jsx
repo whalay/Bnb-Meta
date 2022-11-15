@@ -19,89 +19,14 @@ const first4 = Nft.slice(4, 12);
 
             <div className="grid grid-cols-2 text-[12px]">
               <p>{nft.text1}</p>
-              <p>{nft.text2}</p>
+              <p className="text-bold">{nft.text2}</p>
               <p>{nft.text3}</p>
               <p>{nft.text4}</p>
             </div>
             <img src={nft.img2} alt="" className="" />
           </div>
         ))}
-        {/* <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2 text-[12px]">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
 
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-
-        </div>
-        <div className=" border-2 p-4 m-2 rounded-2xl">
-          <img src={nft1} alt="" />
-          <div className="grid grid-cols-2">
-            <p>Desert king</p>
-            <p>1MBT per night</p>
-            <p>2345km away</p>
-            <p>available for 2 weeks away</p>
-          </div>
-          <img src={star} alt="" />
-
-        </div> */}
       </div>
     </div>
   );
