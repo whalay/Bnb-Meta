@@ -2,26 +2,74 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-import  {Nft} from "../assets/Data";
+import { Nft } from "../assets/Data";
+// import { Options } from "../assets/Data";
+import settings from "../assets/images/settings.png";
+
+const Options =[
+  {
+     label: 'Restaurant',
+     option:  'restaurant',
+  },
+  {
+      label: 'Cottage',
+      option:  'cottage',
+   },
+   {
+      label: 'Castle',
+      option:  'castle',
+   },
+   {
+      label: 'Fantastic city',
+      option:  'fantastic city',
+   },
+   {
+      label: 'Beach',
+      option:  'beach',
+   },
+   {
+      label: 'Carbins',
+      option:  'carbins',
+   },
+   {
+      label: 'Off-grid',
+      option:  'off-grid',
+   },
+   {
+      label: 'Farm',
+      option:  'farm',
+   },
+];
 
 const NFT = () => {
   return (
     <div className="">
       <Navbar />
       <div className="p-10">
-       <div className="flex justify-between items-center p-5 ">
-       <ul className="flex justify-between gap-20">
-          <li>Restaurant</li>
-          <li>Cottage</li>
-          <li>Castle</li>
-          <li>Fantastic city</li>
-          <li>Beach</li>
-          <li>Carbins</li>
-          <li>Off-grid</li>
-          <li>Farm</li>
-        </ul>
-        <button className="p-2 px-4 border-2">Location</button>
-       </div>
+        <div className="flex justify-between items-center p-5 ">
+          <ul className="md:flex justify-between gap-20 hidden ">
+            <li>Restaurant</li>
+            <li>Cottage</li>
+            <li>Castle</li>
+            <li>Fantastic city</li>
+            <li>Beach</li>
+            <li>Carbins</li>
+            <li>Off-grid</li>
+            <li>Farm</li>
+          </ul>
+     
+          <select className="p-2 mx-5 border-2 md:hidden" >
+            {Options.map((option) => (
+          <option value={option.value}>{option.label}</option>
+            ))}
+          </select>
+     
+          <button className="p-2 px-4 border-2 rounded-lg">
+            <span className="flex justify-between gap-4">
+              Location <img src={settings} alt="" />
+            </span>
+          </button>
+        </div>
         <div>
           <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center">
             {Nft.map((nft, index) => (

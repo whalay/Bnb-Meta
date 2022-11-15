@@ -147,3 +147,38 @@ export const Nft = [
     },
 ];
 
+export const Options =[
+    {
+       label: 'Restaurant',
+       option:  'restaurant',
+    },
+    {
+        label: 'Cottage',
+        option:  'cottage',
+     },
+     {
+        label: 'Castle',
+        option:  'castle',
+     },
+     {
+        label: 'Fantastic city',
+        option:  'fantastic city',
+     },
+     {
+        label: 'Beach',
+        option:  'beach',
+     },
+     {
+        label: 'Carbins',
+        option:  'carbins',
+     },
+     {
+        label: 'Off-grid',
+        option:  'off-grid',
+     },
+     {
+        label: 'Farm',
+        option:  'arm',
+     },
+];
+
