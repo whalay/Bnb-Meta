@@ -10,7 +10,7 @@ const Modal = (props) => {
         return null
     }
   return (
-    <div onClick={props.onClose} className="fixed left-0 top-0 right-0 bottom-0 bg-black/70 flex items-center justify-center">
+    <div onClick={props.onClose} className="fixed left-0 top-0 right-0 bottom-0 bg-black/70 flex items-center justify-center z-[9999]">
       <div onClick ={e => e.stopPropagation()} className="w-[500px] bg-white rounded-2xl m-4">
         <div>
           <div className="flex justify-between items-center p-5 font-bold border-b-2">
