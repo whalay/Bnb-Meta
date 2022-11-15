@@ -6,7 +6,8 @@ import logo from "../assets/images/Grouplogo.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black h-full text-white md:flex justify-between items-start md:p-20 py-20 pl-10 ">
+<div className=" bg-black h-full text-white  md:p-20 py-20 pl-10 ">
+<div className=" md:flex justify-between items-start">
       <div className="flex flex-col justify-between items-center md:h-56 space-y-4 ">
         <img src={logo} alt="" />
         <div className="flex gap-8 justify-center py-4 ">
@@ -39,6 +40,8 @@ const Footer = () => {
         <li>Contact us</li>
       </ul>
     </div>
+    <p className="py-3 md:px-5 md:text-xl text-lg ">(c) 2020 Metabnb</p>
+</div>
   );
 };
 

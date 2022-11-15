@@ -36,12 +36,12 @@ const Navbar = (props) => {
       {toggle ? (
         <AiOutlineClose
           onClick={navHandler}
-          className="w-10 h-10 block sm:hidden"
+          className="w-10 h-10 block md:hidden"
         />
       ) : (
         <GiHamburgerMenu
           onClick={navHandler}
-          className="w-10 h-10 block sm:hidden"
+          className="w-10 h-10 block md:hidden"
         />
       )}
 
@@ -58,7 +58,8 @@ const Navbar = (props) => {
         <li>Community</li>
           </ul>
 
-          <button className="p-4 mt-10 bg-white text-black rounded-[10px] ">
+          <button onClick={props.showModal}
+           className="p-4 mt-10 bg-white text-black rounded-[10px] ">
             Connect wallet
           </button>
         </div>
