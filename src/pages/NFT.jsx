@@ -47,7 +47,7 @@ const NFT = ({showModal}) => {
       <Navbar showModal={showModal} />
       <div className="p-10">
         <div className="flex justify-between items-center p-5 ">
-          <ul className="md:flex flex-wrap justify-between gap-20 hidden ">
+          <ul className="md:flex flex-wrap justify-between gap-10 hidden ">
             <li>Restaurant</li>
             <li>Cottage</li>
             <li>Castle</li>

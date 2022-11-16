@@ -1,11 +1,12 @@
 import React from "react";
 
 import { Nft } from "../assets/Data";
+import { img } from "../assets/Data";
 
 
 
 const Body = () => {
-const first4 = Nft.slice(4, 12);
+
 
   return (
     <div className="h-full p-10 ">
@@ -13,7 +14,7 @@ const first4 = Nft.slice(4, 12);
         Inspiration for your next adventure
       </h1>
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center">
-        {first4.map((nft, index) => (
+        {img.map((nft, index) => (
           <div className=" border-2 p-4 m-2 rounded-2xl" key={index}>
             <img src={nft.img} alt="" className="" />
 
